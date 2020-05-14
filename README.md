@@ -1,0 +1,1 @@
+A personal implementation of the popular 2048 game, in command line using the ncurses.h library.

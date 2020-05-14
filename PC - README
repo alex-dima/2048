@@ -1,0 +1,38 @@
+Am realizat toate cerintele jocului.
+Cerinta 1:Meniul
+La rularea aplicatiei utilizatorul este intampinat de optiunile New Game si Quit.
+Folosind sagetile (sus si jos) si tasta enter se poate naviga meniul.
+Daca aplicatia detecteaza si fisierul de salvari (saves) atunci deasupra celor
+doua optiuni apare si optiunea Resume.
+Cerinta 2:Tabla
+Tabla de joc este formata din grid-ul 4x4 si cele doua numere aleatorii
+intre {2,4}. Sub acestea se gaseste scorul jocului si highscore-ul.
+In dreapta tabelei cu jocul se afla atat informatii legate de 
+comenzile valide cat si data si ora curente.
+In timpul unui joc, folosirea tastei Q duce la revenirea in meniu,
+iar folosirea tastei R la resetarea jocului.
+La fiecare joc fisierul saves este creat, acesta fiind sters doar
+cand jocul este pierdut. La iesirea din aplicatie fisierul saves ramane salvat,
+acesta fiind sters doar cand se termina jocul.
+Fisierul highscore este incarcat la fiecare rulare a jocului. Inainte ca jocul sa fie rulat
+fisierul highscore este creat si contine 0.
+Cerinta 3:
+Miscarea jocului este inplementata in 4 functii de miscare numite sugestiv
+(miscare_sus,miscare_jos,etc.), dupa fiecare miscare valida fiind generata o casuta 
+cu 2 sau 4. La fiecare imbinare scorul se actualizeaza. Celulele ce au acealeasi valori 
+sunt evidentiate prin culorile default ale ncurses.
+Cerinta 4:
+Daca la un interval de 7 secunde utilizatorul: nu da nicio comanda atunci
+aplicatia va verifica care sunt directiile care elibereaza cele mai
+multe casute si va alege aleator o directie random intre ele.
+Daca utilizatorul totusi apasa o tasta, dar aceasta nu face parte din 
+comenzile valide cele 7 secunde se vor reseta.
+Cerinta 5:
+Afisarea mesajleor de final se gasesc deasupra instructiunilor jocului.
+Cazul 1: Jucatorul pierde - acesta va fi intampinat de 3 mesaje care
+ii vor aduce la cunostinta pierderea si nevoia de a reveni la meniu.
+Cazul 2: Jucatorul ajunge la 2048 - acesta va fi intampinat de 3 mesaje
+care ii vor aduce la cunostinta victoria. Jucatorul poate continua sa joace
+daca doreste , numarul cel mai mare ce poate fi obtinut in joc fiind 65536
+Cazul 3: Jucatorul nu mai poate nicio misare dar a trecut de 2048 - ii este
+adus la cunostinta finalul jocului
